@@ -1,0 +1,20 @@
+Files in sandy-test-1234567
+File Name: test/
+File Contents:
+b''
+------------------------------
+File Name: test/test1.txt
+File Contents:
+b'This is test 1 file'
+------------------------------
+File Name: test/test2.txt
+File Contents:
+b'This is the file for test 2'
+------------------------------
+Data Copied!!
+Files in sandy-test-1234
+test/
+test/test1.txt
+test/test2.txt
+test1.txt
+test2.txt

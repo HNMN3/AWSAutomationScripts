@@ -1,0 +1,15 @@
+Instance ID             CPU Status
+i-026a684f7e6ccc9c3     %Cpu(s):  0.6 us,  0.2 sy,  0.1 ni, 99.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.1 st
+
+i-09a9d8546718467a8     %Cpu(s):  0.6 us,  0.2 sy,  0.1 ni, 99.1 id,  0.1 wa,  0.0 hi,  0.0 si,  0.1 st
+
+i-0e498a183f5cf762c     %Cpu(s):  0.6 us,  0.2 sy,  0.1 ni, 99.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.1 st
+
+----------
+i-026a684f7e6ccc9c3     %Cpu(s):  0.6 us,  0.2 sy,  0.1 ni, 99.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.1 st
+
+i-09a9d8546718467a8     %Cpu(s):  0.6 us,  0.2 sy,  0.1 ni, 99.1 id,  0.1 wa,  0.0 hi,  0.0 si,  0.1 st
+
+i-0e498a183f5cf762c     %Cpu(s):  0.6 us,  0.2 sy,  0.1 ni, 99.0 id,  0.1 wa,  0.0 hi,  0.0 si,  0.1 st
+
+----------
