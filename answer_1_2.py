@@ -45,5 +45,5 @@ def start_instances(num_instances, image_id=None, key_name=None, group_ids=None,
 
 
 if __name__ == '__main__':
-    instance_ids = start_instances(3)
+    instance_ids = start_instances() # Here to put the number of instance to start
     print("Ids of newly created instances: {}".format(' '.join(instance_ids)))

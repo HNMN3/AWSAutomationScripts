@@ -55,7 +55,7 @@ def copy_contents(source_bucket_name, dest_bucket_name):
             'Key': file_key,
         }, Bucket=dest_bucket_name, Key=file_key)
 
-    print("Data Copied!!")
+    print("Data Copied from Bucket: {} to Bucket:{}".format(source_bucket_name, dest_bucket_name))
 
     my_bucket_contents = s3_client.list_objects(Bucket=dest_bucket_name).get('Contents') or list()
     print("Files in {}".format(dest_bucket_name))

@@ -2,12 +2,11 @@ import boto3
 import paramiko
 import time
 
-from answer_1_2 import start_instances
+
+# from answer_1_2 import start_instances
 
 
-def monitor_ec2_instances():
-    # instance_ids = start_instances(3)
-    instance_ids = ['i-09a9d8546718467a8', 'i-0e498a183f5cf762c', 'i-026a684f7e6ccc9c3']
+def monitor_ec2_instances(instance_ids):
     print("Instance ID\t\tCPU Status")
     key = paramiko.RSAKey.from_private_key_file("sand_security.pem")
     port = 22
@@ -39,4 +38,6 @@ def monitor_ec2_instances():
 
 
 if __name__ == '__main__':
-    monitor_ec2_instances()
+    # Instance ids will be provided in below variable to monitor them
+    instance_ids_to_monitor = ['i-09a9d8546718467a8', 'i-0e498a183f5cf762c', 'i-026a684f7e6ccc9c3']
+    monitor_ec2_instances(instance_ids_to_monitor)

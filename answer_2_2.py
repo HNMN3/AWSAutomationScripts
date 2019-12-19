@@ -14,8 +14,7 @@ def print_docker_container_status(instance_id, conn):
         print('{}\t{}\t{}'.format(instance_id, container_id, cpu_status))
 
 
-def monitor_ec2_docker_instances():
-    instance_ids = ['i-09a9d8546718467a8', 'i-0e498a183f5cf762c', 'i-026a684f7e6ccc9c3']
+def monitor_ec2_docker_instances(instance_ids):
     # print(instance_ids)
     print("Instance ID\t\tContainer ID\tCPU Status")
     key = paramiko.RSAKey.from_private_key_file("sand_security.pem")
@@ -44,4 +43,6 @@ def monitor_ec2_docker_instances():
 
 
 if __name__ == '__main__':
-    monitor_ec2_docker_instances()
+    # Instance ids with running docker container will be updated in below variable 
+    instance_ids_to_monitor = ['i-09a9d8546718467a8', 'i-0e498a183f5cf762c', 'i-026a684f7e6ccc9c3']
+    monitor_ec2_docker_instances(instance_ids_to_monitor)
