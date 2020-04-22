@@ -1,7 +1,8 @@
 import boto3
 
 
-def start_instances(num_instances, image_id=None, key_name=None, group_ids=None, instance_type=None, subnet_id=None):
+def start_instances(num_instances, image_id=None, key_name=None, group_ids=None,
+                    instance_type=None, subnet_id=None):
     running_state = 'running'
     pending_state = 'pending'
     default_image_id = 'ami-0d5d9d301c853a04a'
@@ -38,12 +39,12 @@ def start_instances(num_instances, image_id=None, key_name=None, group_ids=None,
             else:
                 other_state_instance.append("{} - {}".format(instance.id, instance_state))
     if other_state_instance:
-        print('Some instance went into unknonwn state!!')
+        print('Some instance went into unknown state!!')
         print('\n'.join(other_state_instance))
 
     return running_instance_ids
 
 
 if __name__ == '__main__':
-    instance_ids = start_instances() # Here to put the number of instance to start
+    instance_ids = start_instances(3)  # Here to put the number of instance to start
     print("Ids of newly created instances: {}".format(' '.join(instance_ids)))
