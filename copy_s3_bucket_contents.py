@@ -65,6 +65,6 @@ def copy_contents(source_bucket_name, dest_bucket_name):
 
 
 if __name__ == '__main__':
-    source_bucket_name = "sandy-test-1234567"  # Update the source bucket name here
-    dest_bucket_name = "sandy-test-1234"  # Update the destination bucket name here
+    source_bucket_name = "test-1234567"  # Update the source bucket name here
+    dest_bucket_name = "test-1234"  # Update the destination bucket name here
     copy_contents(source_bucket_name, dest_bucket_name)
