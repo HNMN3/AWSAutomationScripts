@@ -10,7 +10,7 @@ docutils==0.15.2
 fabric==2.5.0
 invoke==1.4.1
 jmespath==0.10.0
-paramiko==2.7.2
+paramiko==2.10.1
 prettytable==0.7.2
 pyasn1==0.4.8
 pycparser==2.20
